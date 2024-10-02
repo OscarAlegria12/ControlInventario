@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.inventory-list {
+    margin-top: 20px;
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.inventory-list h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.1em;
+}
+
+
+.notification {
+    background-color: #dff0d8;
+    color: #3c763d; 
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: none; 
+    text-align: center;
+}
+
+/* MiniResponsive */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}

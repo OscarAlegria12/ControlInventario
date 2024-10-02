@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario con Factory y Observer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Control de Inventario</h1>
+    
+    <label for="itemType">Tipo de Ítem:</label>
+    <select id="itemType">
+        <option value="Producto">Producto</option>
+        <option value="Servicio">Servicio</option>
+    </select>
+
+    <label for="itemName">Nombre del Ítem:</label>
+    <input type="text" id="itemName" placeholder="Nombre del ítem">
+
+    <label for="itemPrice">Precio:</label>
+    <input type="number" id="itemPrice" placeholder="Precio del ítem">
+
+    <button onclick="addItemToInventory()">Agregar al Inventario</button>
+    <div class="notification" id="notification" style="display: none;"></div>
+
+    <div class="inventory-list">
+        <h2>Inventario:</h2>
+        <ul id="inventoryList"></ul>
+    </div>
+</div>
+
+<script src="/src/factory.js"></script>
+<script src="/src/observer.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
